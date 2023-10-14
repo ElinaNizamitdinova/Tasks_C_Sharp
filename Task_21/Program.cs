@@ -1,0 +1,11 @@
+﻿Console.WriteLine("Введите координаты первой точки(x,y,z)");
+double x1 = Convert.ToInt32(Console.ReadLine());
+double y1 = Convert.ToInt32(Console.ReadLine());
+double z1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты второй точки(x,y,z)");
+double x2 = Convert.ToInt32(Console.ReadLine());
+double y2 = Convert.ToInt32(Console.ReadLine());
+double z2 = Convert.ToInt32(Console.ReadLine());
+double SegmentLenght2 = Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2) +  Math.Pow((z1 - z2), 2);
+double SegmentLenght = Math.Sqrt(SegmentLenght2);
+Console.WriteLine(Math.Round(SegmentLenght,2));
