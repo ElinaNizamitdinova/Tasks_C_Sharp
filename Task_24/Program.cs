@@ -1,7 +1,7 @@
 ﻿System.Console.WriteLine("Введите число");
 int userA = Convert.ToInt32(Console.ReadLine());
 
-int Summ(int a)
+(int,int) Summ(int a)
 {
     int summ = 0;
 
@@ -9,7 +9,7 @@ int Summ(int a)
     {
         summ = summ + i;
     }
-    return summ;
+    return (summ, summ);
 }
-int userResult = Summ(userA);
+var userResult = Summ(userA);
 System.Console.WriteLine(userResult);
